@@ -15,7 +15,7 @@ $data = [
 	"ut" => isset( $_POST["utm_term"] ) ? $_POST["utm_term"] : "",
 	"um" => isset( $_POST["utm_medium"] ) ? $_POST["utm_medium"] : "",
 ];
-$curl = curl_init( "https://just-traffic.org/api/wm/push.json?id=9-e829791daa5566f50233e119b57828de" );
+$curl = curl_init( "https://just-traffic.org/api/wm/push.json?40-33d2792d09f566936b372706722febb6" );
 curl_setopt( $curl, CURLOPT_RETURNTRANSFER, true );
 curl_setopt( $curl, CURLOPT_TIMEOUT, 30 );
 curl_setopt( $curl, CURLOPT_POST, 1 );
