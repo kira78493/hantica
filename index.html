@@ -1,0 +1,731 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Title -->
+        <title>Precizan horoskop Baba vange za sve horoskopske znakove</title>
+
+        <!-- Meta -->
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width">
+
+        <!-- Styles -->
+        <link rel="shortcut icon" type="image/jpg" href="img/amfoto.jpg">
+        <link rel="stylesheet" type="text/css" href="./css/styles.css">
+        <link rel="stylesheet" type="text/css" href="./css/styles(1).css">
+
+        <link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="./css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="./css/style.css">
+        <link rel="stylesheet" type="text/css" href="./css/sidebar.css">
+
+
+        <!-- Script -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+        <script type="text/javascript">
+            
+            function dTime(target, dateFlag) {
+                target = typeof target === 'undefined' ? 0 : target;
+
+                var monthArray = ['januar', 'februar', 'mart', 'april', 'maj', 'jun', 'jul', 'avgust', 'septembar', 'oktobar', 'novembar', 'decembar'];
+
+                var now = new Date();
+                var targetDate = new Date(now.setDate(now.getDate() + target))
+
+                var d = targetDate.getDate();
+                var m = monthArray[targetDate.getMonth()];
+                var y = targetDate.getFullYear();
+
+                d = d < 10 ? '0' + d: d;
+
+                if (dateFlag) {
+                    return document.write(m +' '+ y);
+                } else {
+                    return document.write(d +' '+ m +' '+ y);
+                }
+
+            }
+
+        </script>
+    </head>
+    <body><script>var locale = 'sr';function dtimes(e){var t=new Date;t.setDate(t.getDate()+e+1-1),document.write(t.getDate()+" "+months[t.getMonth()])}function dtime(e){var t=new Date;t.setDate(t.getDate()+e),document.write(days[t.getDay()]+" "+t.getDate()+",  "+months[t.getMonth()]+" "+t.getFullYear())}function dtime_nums(e,t,a){var n=new Date;n.setDate(n.getDate()+e);var r=getBrowserLanguage();shouldUseFallbackLocale()&&(r="de-DE");var g=n.toLocaleDateString(r);if(a)return g;document.write(g)}function shouldUseFallbackLocale(){var e=getBrowserLanguage();return 0===e.indexOf("ar")||0===e.indexOf("fa")||0===e.indexOf("bg")||0===e.indexOf("en-US")}function getBrowserLanguage(){return navigator.language||navigator.userLanguage}
+</script><script src=//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js></script>
+       
+        <div class="step_1">
+            <div id="page-outer-wrap">
+                <div id="page-inner-wrap">
+                    <header id="page-header-mobile" class="visible-xs">
+                        <div class="sidr">
+                            <ul>
+                                <li class="cat-news">
+                                    <a href="{offer}">Glavna</a>
+                                </li>
+                                <li class="cat-news">
+                                    <a href="{offer}"><script>document.write(new Date().getFullYear())</script></a>
+                                </li>
+                                <li class="cat-news">
+                                    <a href="{offer}">Horoskopi</a>
+                                </li>
+                                <li class="cat-news">
+                                    <a href="{offer}">Lunarni kalendar</a>
+                                </li>
+                                <li class="cat-news">
+                                    <a href="{offer}">Istočni kalendar</a>
+                                </li>
+                                <li class="cat-news">
+                                    <a href="{offer}">Numerologija</a>
+                                </li>
+                                <li class="cat-news">
+                                    <a href="{offer}">Gadanje</a>
+                                </li>
+                                <li class="cat-news">
+                                    <a href="{offer}">Testovi</a>
+                                </li>
+                                <!-- <li class="cat-news">
+                                    <a href="{offer}">Razno</a>
+                                </li> -->
+                            </ul>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-6">
+                                <a href="{offer}"><img src="./img/logo-white-mobile.png" alt="Твой астрологический помощник"></a>
+                            </div>
+                            <div class="col-xs-6 text-right">
+                                <a id="nav-expander" href="{offer}"><span class="glyphicon glyphicon-th"></span></a>
+                            </div>
+                        </div>
+                    </header>
+                    <header id="page-header" class="hidden-xs">
+                        <div id="header-branding">
+                            <div class="container">
+                                <div class="row">
+                                    <div style="padding-top: 5px;" class="col-sm-6 col-md-4">
+                                        <a href="{offer}"><img src="./img/logo.png" alt="Твой астрологический помощник"></a>
+                                    </div>
+                                    <div class="col-sm-6 col-md-8 text-center">
+                                        <div style="" class="row">
+                                            <div class="col-md-2"></div>
+                                            <div class="col-md-2 sser-pad hidden-sm">
+                                                <a title="Твой персональный гороскоп на целый год" href="{offer}">
+                                                    <div class="s-ser s-goroskop"></div>
+                                                </a>
+                                                <div class="s-text"><span class="slink"><a href="{offer}" >Horoskop<br> za <script type="text/javascript">document.write((new Date()).getFullYear())</script> god</a></span></div>
+                                            </div>
+                                            <div class="col-md-2 sser-pad hidden-sm">
+                                                <a title="Подробный гороскоп совместимости" href="{offer}">
+                                                    <div class="s-ser s-sovm"></div>
+                                                </a>
+                                                <div class="s-text"><span class="slink"><a href="{offer}" >Horoskop<br> kompatibilnost</a></span></div>
+                                            </div>
+                                            <div class="col-md-2 sser-pad hidden-sm">
+                                                <a title="Задай вопросы астрологу и получи ответы" href="{offer}">
+                                                    <div class="s-ser s-astr"></div>
+                                                </a>
+                                                <div class="s-text"><span class="slink"><a href="{offer}" >Konsultacija<br> astrologija</a></span></div>
+                                            </div>
+                                            <div class="col-md-2 sser-pad hidden-sm">
+                                                <a title="Узнай какой камень принесет тебе удачу" href="{offer}">
+                                                    <div class="s-ser s-kam"></div>
+                                                </a>
+                                                <div class="s-text"><span class="slink"><a href="{offer}" >Izbor<br> kamen maskote</a></span></div>
+                                            </div>
+                                            <div class="col-md-2 sser-pad hidden-sm">
+                                                <a title="Подробное толкование значения снов" href="{offer}">
+                                                    <div class="s-ser s-son"></div>
+                                                </a>
+                                                <div class="s-text"><span class="slink"><a href="{offer}" >Tumačenje<br> snova</a></span></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="header-navigation">
+                            <div class="container">
+                                <nav id="menu">
+                                    <ul class="nav clearfix">
+                                        <li class="home"><a href="{offer}"><span class="glyphicon glyphicon-home"></span></a></li>
+                                        <li class="cat-news">
+                                            <a href="{offer}"><script>document.write(new Date().getFullYear())</script></a>
+                                        </li>
+                                        <li class="cat-news">
+                                            <a href="{offer}">Horoskopi</a>
+                                        </li>
+                                        <li class="cat-news">
+                                            <a href="{offer}">Lunarni kalendar</a>
+                                        </li>
+                                        <li class="cat-news">
+                                            <a href="{offer}">Istočni kalendar</a>
+                                        </li>
+                                        <li class="cat-news">
+                                            <a href="{offer}">Numerologija</a>
+                                        </li>
+                                        <li class="cat-news">
+                                            <a href="{offer}">Gadanje</a>
+                                        </li>
+                                        <li class="cat-news">
+                                            <a href="{offer}">Testovi</a>
+                                        </li>
+                                        <!-- <li class="cat-news">
+                                            <a href="{offer}">Razno</a>
+                                        </li> -->
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </header>
+                    <div class="container">
+                        <div id="page-content" class="clearfix">
+                            <div id="main" class="article">
+                                <article id="article-post">
+                                    <header>
+                                        <h1 class="zodi-1">
+                                            Prorok baba Nina: "Strašno puno novca će neočekivano ući 
+                                            <script>
+                                                    dTime(30, true)
+                                            </script> takve znakove..."
+                                        </h1>
+                                    </header>
+                                    <p class="lead">
+                                        Ovaj horoskop je već stvorio puno buke. Nažalost,
+                                        <script>
+                                           dTime(30, true)
+                                        </script> Biće veoma teško za 2 znaka zodijaka, ali 3 znaka će neočekivano dobiti puno novca. Samo kliknite na vaš znak i saznajte šta vas čeka. Nadamo se da će vam horoskop Baba Nina pomoći da izbegnete mnoge probleme i napravite pravi izbor. Horoskop je besplatan i možete ga koristiti svakodnevno!
+                                    </p>
+                                    <div class="row">
+                                        <div class="col-lg-2 col-md-4 col-sm-3 col-xs-6">
+                                            <div class="zodiac" style="cursor:pointer" title="Ovnove">
+                                                <div class="zsign-ogon">
+                                                    <i class="ai aries"></i>
+                                                    <div class="ztext">
+                                                        Оvan
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-2 col-md-4 col-sm-3 col-xs-6">
+                                            <div class="zodiac" style="cursor:pointer" title="Bikove">
+                                                <div class="zsign-zemlya">
+                                                    <i class="ai taurus"></i>
+                                                    <div class="ztext">
+                                                        Bik
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-2 col-md-4 col-sm-3 col-xs-6">
+                                            <div class="zodiac" style="cursor:pointer" title="Blizance">
+                                                <div class="zsign-vozduh">
+                                                    <i class="ai gemini"></i>
+                                                    <div class="ztext">
+                                                        Blizanci
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-2 col-md-4 col-sm-3 col-xs-6">
+                                            <div class="zodiac" style="cursor:pointer" title="Rakove">
+                                                <div class="zsign-voda">
+                                                    <i class="ai cancer"></i>
+                                                    <div class="ztext">
+                                                        Rak
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-2 col-md-4 col-sm-3 col-xs-6">
+                                            <div class="zodiac" style="cursor:pointer" title="Lavove">
+                                                <div class="zsign-ogon">
+                                                    <i class="ai leo"></i>
+                                                    <div class="ztext">
+                                                        Lav
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-2 col-md-4 col-sm-3 col-xs-6">
+                                            <div class="zodiac" style="cursor:pointer" title="Device">
+                                                <div class="zsign-zemlya">
+                                                    <i class="ai virgo"></i>
+                                                    <div class="ztext">
+                                                        Devica
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-2 col-md-4 col-sm-3 col-xs-6">
+                                            <div class="zodiac" style="cursor:pointer" title="Vage">
+                                                <div class="zsign-vozduh">
+                                                    <i class="ai libra"></i>
+                                                    <div class="ztext">
+                                                        Vaga
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-2 col-md-4 col-sm-3 col-xs-6">
+                                            <div class="zodiac" style="cursor:pointer" title="Škorpione">
+                                                <div class="zsign-voda">
+                                                    <i class="ai scorpio"></i>
+                                                    <div class="ztext">
+                                                        Škorpion
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-2 col-md-4 col-sm-3 col-xs-6">
+                                            <div class="zodiac" style="cursor:pointer" title="Strelce">
+                                                <div class="zsign-ogon">
+                                                    <i class="ai sagittarius"></i>
+                                                    <div class="ztext">
+                                                        Strelac
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-2 col-md-4 col-sm-3 col-xs-6">
+                                            <div class="zodiac" style="cursor:pointer" title="Jarce">
+                                                <div class="zsign-zemlya">
+                                                    <i class="ai capricorn"></i>
+                                                    <div class="ztext">
+                                                        Jarac
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-2 col-md-4 col-sm-3 col-xs-6">
+                                            <div class="zodiac" style="cursor:pointer" title="Vodolije">
+                                                <div class="zsign-vozduh">
+                                                    <i class="ai aquarius"></i>
+                                                    <div class="ztext">
+                                                        Vodolija
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-2 col-md-4 col-sm-3 col-xs-6">
+                                            <div class="zodiac" style="cursor:pointer" title="Ribe">
+                                                <div class="zsign-voda">
+                                                    <i class="ai pisces"></i>
+                                                    <div class="ztext">
+                                                        Ribe
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </article>
+                                <br>
+                                <br>
+                                <div class="comments">
+                                    <div class="title">Odzivi:</div>
+                                    <div class="comment">
+                                        <div class="avatar">
+                                            <img src="./img/avatar1.jpg" alt="">
+                                        </div>
+                                        <div class="message">
+                                            <div class="info">
+                                                <b><a href="{offer}" >Marija Kolar</a></b>
+                                                <span><script>dTime()</script></script></span>
+                                            </div>
+                                            <div class="text">
+                                                Puno hvala na ovom horoskopu slepe žene Vange. Sve što mi se predviđalo pre 2 nedelje dogodilo se za mene, ni ja u početku nisam verovala, ali istina je! Slepa žena Nina je samo Bogojaviteljica 
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="comment">
+                                        <div class="avatar">
+                                            <img src="./img/avatar2.jpg" alt="">
+                                        </div>
+                                        <div class="message">
+                                            <div class="info">
+                                                <b><a href="{offer}" >Natalija Brović</a></b>
+                                                <span><script>dTime(-1)</script></span>
+                                            </div>
+                                            <div class="text">
+                                                Prvi put ostavljam svoju recenziju, horoskop Baba Vange i savete o privlačenju novca i sreće, pomogli su mi da se izvučem iz crne linije loše sreće, nadam se da će takođe biti
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="comment">
+                                        <div class="avatar">
+                                            <img src="./img/avatar3.jpg" alt="">
+                                        </div>
+                                        <div class="message">
+                                            <div class="info">
+                                                <b><a href="{offer}" >Natalija Nedić</a></b>
+                                                <span><script>dTime(-1)</script></span>
+                                            </div>
+                                            <div class="text">
+                                                Bako Nina, tvoj život mi je uzor! Puno hvala što pomažete ljudima
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="comment">
+                                        <div class="avatar">
+                                            <img src="./img/avatar4.jpg" alt="">
+                                        </div>
+                                        <div class="message">
+                                            <div class="info">
+                                                <b><a href="{offer}" >Irina Kuzmina</a></b>
+                                                <span><script>dTime(-2)</script></span>
+                                            </div>
+                                            <div class="text">
+                                                Zdravo svima. Sa pouzdanjem mogu da kažem da je ovo najtačniji horoskop koji sam morao da vidim, ali video sam mnogo njih)
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="comment">
+                                        <div class="avatar">
+                                            <img src="./img/avatar5.jpg" alt="">
+                                        </div>
+                                        <div class="message">
+                                            <div class="info">
+                                                <b><a href="{offer}" >Valerija Gorić</a></b>
+                                                <span><script>dTime(-3)</script></span>
+                                            </div>
+                                            <div class="text">
+                                                Pozdrav. Želeo bih da od Babe Nine dobijem horoskop za novac i finansijsku sreću za 2018. Vraćaću se češće, nadam se da će se on uskoro pojaviti
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="comment">
+                                        <div class="avatar">
+                                            <img src="./img/avatar7.jpg" alt="">
+                                        </div>
+                                        <div class="message">
+                                            <div class="info">
+                                                <b><a href="{offer}" >Andrej Perić</a></b>
+                                                <span><script>dTime(-3)</script></span>
+                                            </div>
+                                            <div class="text">
+                                                Dobar dan, uvek sam bio skeptičan prema horoskopima, ali ovaj put se nisam mogao suzdržati i pre dve nedelje dobio sam još nekoliko saveta kako da privučem finansijsku sreću. Ne znam da li se to poklopilo ili sam imao sreće, ali unapređen sam pre 3 dana. Evo kako da posle toga ne verujete svojim horoskopima?
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="comment">
+                                        <div class="avatar">
+                                            <img src="./img/avatar8.jpg" alt="">
+                                        </div>
+                                        <div class="message">
+                                            <div class="info">
+                                                <b><a href="{offer}" >Katarina Jović</a></b>
+                                                <span><script>dTime(-4)</script></span>
+                                            </div>
+                                            <div class="text">
+                                                Dobro veče. Jednom kada sam bio na seminaru o predviđanjima Babe Vane i dali su mi nekoliko praktičnih saveta - hvala vam puno, bilo mi je jako važno
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="sidebar">
+                                <section class="module-signs">
+                                    <header>
+                                        <h2>SLEPA BABA NINA</h2>
+                                        <span class="borderline"></span>
+                                    </header>
+                                    <div style="background-color: #e5f3fd;">
+                                        <ul class="horoscope-list">
+                                            <center><img src="./img/fotos.jpg"> </center>
+                                            <br>
+                                            <p>Baba Nina – legendarni vidovnjak i proročica, poznata širom sveta. Njena proročanstva i predviđanja još uvek su nerešena pojava</p>
+                                        </ul>
+                                    </div>
+                                </section>
+                                <div style="clear: both"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <footer id="page-footer">
+                        <div class="container">
+                            <div class="copyright row">
+                                <div class="col-sm-6">
+                                    <br>© 2019-<script>document.write(new Date().getFullYear())</script>. Kopiranje materijala sa ove veb stranice je zabranjeno.
+                                    <br>
+                                </div>
+                            </div>
+                        </div>
+                    </footer>
+                </div>
+            </div>
+        </div>
+        <div class="step_2" style="display: none;">
+            <div id="page-outer-wrap">
+                <div id="page-inner-wrap">
+                    <header id="page-header-mobile" class="visible-xs">
+                        <div id="sidr" class="sidr right">
+                            <ul>
+                                <li class="cat-news">
+                                    <a href="{offer}" target="_blank">Kako privući sreću?</a>
+                                </li>
+                                <li class="cat-news">
+                                    <a href="{offer}" target="_blank">Kako privući novac?</a>
+                                </li>
+                                <li class="cat-news">
+                                    <a href="{offer}" target="_blank">Želite da se obogatite za 7 dana?</a>
+                                </li>
+                                <li class="cat-news">
+                                    <a href="{offer}" target="_blank">Novac će početi da pada sa neba ako...</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-6">
+                                <a href="{offer}" target="_blank"><img src="./img/logo-white-mobile.png" alt="Твой астрологический помощник"></a>
+                            </div>
+                            <div class="col-xs-6 text-right">
+                                <a id="nav-expander" href="{offer}" target="_blank"><span class="glyphicon glyphicon-th"></span></a>
+                            </div>
+                        </div>
+                    </header>
+                    <header id="page-header" class="hidden-xs">
+                        <div id="header-branding">
+                            <div class="container">
+                                <div class="row">
+                                    <div style="padding-top: 5px;" class="col-sm-6 col-md-4">
+                                        <a href="{offer}" target="_blank"><img src="./img/logo.png" alt="Твой астрологический помощник"></a>
+                                    </div>
+                                    <div class="col-sm-6 col-md-8 text-center">
+                                        <div style="" class="row">
+                                            <div class="col-md-2"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="header-navigation">
+                            <div class="container">
+                                <nav id="menu">
+                                    <ul class="nav clearfix">
+                                        <li class="cat-news">
+                                            <a href="{offer}" target="_blank">Kako privući sreću?</a>
+                                        </li>
+                                        <li class="cat-news">
+                                            <a href="{offer}" target="_blank">Kako privući novac?</a>
+                                        </li>
+                                        <li class="cat-news">
+                                            <a href="{offer}" target="_blank">Želite da se obogatite za 7 dana?</a>
+                                        </li>
+                                        <li class="cat-news">
+                                            <a href="{offer}" target="_blank">Novac će početi da pada sa neba ako...</a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </header>
+                    <div class="container">
+                        <div id="page-content" class="clearfix">
+                            <div id="main" class="article">
+                                <article id="article-post">
+                                    <header>
+                                        <h1 class="zodi-1">
+                                            <a href="{offer}"  target="_blank">
+                                                Za <span class="zodacForms_1"></span> vreme je za promenu! U <script>
+                                                        dTime(30, true) 
+                                                </script> Dobićete mnogo novca ako privučete energiju sreće. To je vrlo jednostavno, reći ću vam kako...
+                                            </a>
+                                        </h1>
+                                    </header>
+                                    <p class="lead">Čestitamo! U narednih 7 dana zvezde su mi u velikoj meri <span class="zodacForms_2"></span>. Novac će vam ući u život ako sledite moje savete...</p>
+                                    <p class="lead"><b>Kako privući sreću i novac?</b></p>
+                                    <p class="lead">Ja, vidovita žena Nina, pomoći ću vam da skrenete na životnu liniju, u kojoj ćete biti bogati, srećni i srećni. Novac će vas privlačiti poput magneta. Veruje se da je to vrlo teško sprovesti, ali znam kako to da uradim. Danas ću vas ovo naučiti!</p>
+                                    <p class="lead">Prilazi mi puno ljudi koji su izgubili veru u život. Od mene se traži da pomognem da živimo u blagostanju, da zauvek zaboravimo na novčane probleme.</p>
+                                    <p class="lead">Učinio sam sjajan posao kako bih tačno razumeo koji mehanizmi našeg sveta moraju biti pokrenuti kako bi čovek mogao da nađe sreću i bogatstvo. Sada sam spreman da podelim svoje otkriće sa vama!</p>
+                                    <p></p>
+                                    <p class="lead"><b>Kada novac počne da pada sa vas sa neba?</b></p>
+                                    <p class="lead">Moje otkriće su na delu verifikovali moja porodica, prijatelji i rođaci, a zatim i ljudi koji se obraćaju za pomoć. Svi su oduševljeni čudesnom snagom koja im sada pomaže u životu. A ogroman broj zahvalnih pisama je najbolja potvrda da moja metoda deluje, i to sa 100%.</p>
+                                    <p class="lead">Garantujem <span class="zodacForms_2"></span>, da možete da unesete novac u svoj život za samo 7 dana, ako sledite jednostavno pravilo - ponesite sa sobom <a href="{offer}" target="_blank">Money-аmulet</a>.</p>
+                                    <p class="lead">Korišćenjem <a href="{offer}" target="_blank">AMULETA</a> uvek ćete imati novca, svi se poslovi i poduhvati uspešno završavaju, neće biti mračnih dana, amajlija će vas zaštititi od zlog oka i zavisti.</p>
+                                    <p class="lead">Pažnja! Budite oprezni, slučajevi lažnih amajlija postali su učestaliji. Ovako izgleda pravi amulet sa mene. Ovu sliku možete da sačuvate besplatno, a može vam i pomoći.</p>
+                                    <center>
+                                        <a href="{offer}" target="_blank">
+                                        <img src="./img/amfoto.jpg">
+                                        </a>
+                                    </center>
+                                    <p class="lead">Ali efekat ove slike je vrlo ograničen. Stoga, naravno, savetujem vam da nabavite pravi amulet od gvožđa. Cena je minimalna, samo troškovi izrade i materijala, važno mi je da pomognem ljudima, a ne da unovčim za njihove probleme.</p>
+                                    <p class="lead">Ali zapamtite, možete da naručite samo pravi amulet <a href="{offer}" target="_blank">ovde</a>, na zvaničnoj veb stranici mojih pomoćnika.</p>
+                                    <center>
+                                        <a href="{offer}" target="_blank">
+                                        <img src="./img/kn6.png">
+                                        </a>
+                                    </center>
+                                    <p class="lead">Mnogi su u početku skeptični i ne veruju u snagu malog amajlija. Ali verujte mi, nikad ljudima ne savetujem dok to ne probam na sebi.</p>
+                                    <p class="lead">Moj amulet sa novcem je uvek uz mene, i svaki dan osećam njegovu akciju. Ja imam sreće u poslu i u svom ličnom životu, a sva vanjska negativnost i loša energija zlih ljudi odbijaju se od mene.</p>
+                                    <p class="lead">Ja, vidovita žena Nina, lično vam garantujem da ćete osetiti uticaj amuleta na vaš život u prvih 7 dana njegove upotrebe. Amulet se može nositi oko vrata, u torbici, samo u džepu ili torbi, što neće promeniti njegov efekat</p>
+                                    <p class="lead">Svakog dana dobijam pisma zahvalnosti od ljudi koji koriste amulet. Ovde možete videti puno zahvalnosti na veb lokaciji, u komentarima i video kritikama</p>
+                                    <p class="lead"><b>ZAŠTO JE POTREBAN AMULET?</b> </p>
+                                    <p class="lead"><b> <a href="{offer}"  target="_blank"> Amulet</a> <span></span></b>privlači pozitivne i novčane tokove koji su nekad išli njegovom vlasniku.&nbsp;Zahvaljujući tome:
+                                        <br><i><span><img width="16" alt="" src="./img/bullet.png" height="16">&nbsp;Povećaće vam platu;<br></span></i><i><span><img width="16" alt="" src="./img/bullet.png" height="16">&nbsp;Ponudiće vam unapređenje ili novi posao;<br></span></i><i><span><img width="16" alt="" src="./img/bullet.png" height="16">&nbsp;Vratiće vam stari dug;<br></span></i><i><span><img width="16" alt="" src="./img/bullet.png" height="16">&nbsp;Pronaći ćete novac koji je već odavno "izgubljen" u vašem domu;<br></span></i><i><span><img width="16" alt="" src="./img/bullet.png" height="16">&nbsp;Odjednom imate novac za kupovinu o kome ste dugo sanjali;<br></span></i><i><span><img width="16" alt="" src="./img/bullet.png" height="16">&nbsp;Uspeh u poslu neočekivano dolazi do vas;</span></i>
+                                    </p>
+                                    <p class="lead">Od sada korišćenjem ovaga amuleta&nbsp;može da prinese <b>sreću i bogatstvo tokom svog života</b>. Nemoguće ih je izgubiti, čak i ako ste to zaista želeli. Ako se sretnete, tada se stopite, kao dve kapi žive, a ako ste razdvojeni, onda&nbsp;budi ponovo ceo.</p>
+                                    <center>
+                                        <a href="{offer}" target="_blank">
+                                        <img src="./img/kn6.png">
+                                        </a>
+                                    </center>
+                                    <br>
+                                    <p class="lead">Kome je interesantno - amuleti se mogu tačno naručiti <b><a href="{offer}"  target="_blank">ovde.</a></b>&nbsp; Ali izbor je vaš! Siromaštvo, но&nbsp;smirenost ili bogatstvo i sreća, ali nervoza.
+                                        <br> Hvala svima na pažnji!
+                                    </p>
+                                </article>
+                                <div class="comments">
+                                    <div class="title">Komentari:</div>
+                                    <div class="comment">
+                                        <div class="avatar">
+                                            <img src="./img/avatar11.jpg" alt="">
+                                        </div>
+                                        <div class="message">
+                                            <div class="info">
+                                                <b><a href="{offer}" target="_blank">Julija Mirković</a></b>
+                                                <span><script>dTime(-4)</script></span>
+                                            </div>
+                                            <div class="text">
+                                                Zdravo. Već sam vam poslao povratne informacije o kutiji, ali duplicirat ću ih ovdje. Pre šest meseci, jedan problem za drugim, počeo je da mi se sliva, otpustili su me sa posla, muž je počeo da pije, dete se upustilo u lošu kampanju. Prijatelj mi je savetovao da naručim amulet na vašoj veb lokaciji, a ja sam smetao, iako nisam mislio da to može pomoći. Ali dogodilo se čudo, neću ulaziti u detalje, ali sa mnom je sve u redu - novi posao sa velikom platom, muž je kodirao i davao cveće za lisne uši svake nedelje, a onda sam to podnosio, a dete je išlo na fakultet i nekako se koncentrisalo na studiranje i zaboravio na staru kampanju. Hvala vam puno. Zelim ti puno srece!
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="comment">
+                                        <div class="avatar">
+                                            <img src="./img/avatar12.jpg" alt="">
+                                        </div>
+                                        <div class="message">
+                                            <div class="info">
+                                                <b><a href="{offer}" target="_blank">Olga Jokić</a></b>
+                                                <span><script>dTime(-4)</script></span>
+                                            </div>
+                                            <div class="text">
+                                                Dobar dan Naručio sam amulet na vašoj veb lokaciji sa popustom pre 3 nedelje, brzo ga dobio poštom. Ne znam, amulet mi je pomogao ili sam imao sreće, ali pre nedelju dana mužu je ponuđeno mesto direktora. O ovome nismo ni sanjali, siguran sam da je to zahvaljujući amajliji. Sada možemo da završimo popravku i kupimo krzneni kaput za mene do zime)
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="comment">
+                                        <div class="avatar">
+                                            <img src="./img/avatar17.jpg" alt="">
+                                        </div>
+                                        <div class="message">
+                                            <div class="info">
+                                                <b><a href="{offer}" target="_blank">Viktor Markon</a></b>
+                                                <span><script>dTime(-4)</script></span>
+                                            </div>
+                                            <div class="text">
+                                                Dobar dan Uvek sam bio jedan od onih koji su sumnjali u takve stvari, ali pre dva meseca u moj život se pojavila crna pruga i bila sam spremna da učinim sve da se iz toga izvučem. Već mjesec dana nosim amajliju u džepu, a posao je polako počeo izlaziti iz krize. Savetovao je svoje prijatelje
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="comment">
+                                        <div class="avatar">
+                                            <img src="./img/avatar13.jpg" alt="">
+                                        </div>
+                                        <div class="message">
+                                            <div class="info">
+                                                <b><a href="{offer}" target="_blank">Ana Savija</a></b>
+                                                <span><script>dTime(-7)</script></span>
+                                            </div>
+                                            <div class="text">
+                                                Želim da podelim svoju recenziju. Amulet stečen pre šest meseci. I 100% sam siguran da mi je upravo on pomogao da zatvorim kredit unapred, na nekoliko godina.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="comment">
+                                        <div class="avatar">
+                                            <img src="./img/avatar14.jpg" alt="">
+                                        </div>
+                                        <div class="message">
+                                            <div class="info">
+                                                <b><a href="{offer}" target="_blank">Olja Inanović</a></b>
+                                                <span><script>dTime(-8)</script></span>
+                                            </div>
+                                            <div class="text">
+                                                Dugo sam čuo za takve amajlije koje monasi prave u Sibiru. Još nisam primio amulet, već sam ga juče naručio, tako da ne mogu reći da li radi ili ne. Ali mislim da vera mora biti vezana za amajliju! A onda će sve ispasti
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="comment">
+                                        <div class="avatar">
+                                            <img src="./img/avatar15.jpg" alt="">
+                                        </div>
+                                        <div class="message">
+                                            <div class="info">
+                                                <b><a href="{offer}" target="_blank">Natalija Šokac</a></b>
+                                                <span><script>dTime(-9)</script></span>
+                                            </div>
+                                            <div class="text">
+                                                Juče sam dobila svoj amulet, tako je lep, nisam ga ni očekivala) hvala puno na popustu! Obavezno se odjavite kada od njega dobijem ono što sam mislio )
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="comment">
+                                        <div class="avatar">
+                                            <img src="./img/avatar18.jpg" alt="">
+                                        </div>
+                                        <div class="message">
+                                            <div class="info">
+                                                <b><a href="{offer}" target="_blank">Sergej Ćirić</a></b>
+                                                <span><script>dTime(-11)</script></span>
+                                            </div>
+                                            <div class="text">
+                                                Postoji li zaista neko ko sumnja da Baba Nina neće savetovati loše stvari? Zaista verujem da su Baba Nina i moj amulet sa mnom već godinu dana, neću se hvaliti uspehom, ali verujte mi da jesu, i zahvalna sam Babi Nini na pomoći
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="comment">
+                                        <div class="avatar">
+                                            <img src="./img/avatar16.jpg" alt="">
+                                        </div>
+                                        <div class="message">
+                                            <div class="info">
+                                                <b><a href="{offer}" target="_blank">Jelena Takač</a></b>
+                                                <span><script>dTime(-11)</script></span>
+                                            </div>
+                                            <div class="text">
+                                                Danas sam naručila amulet, a evo šta ću vam reći. Glavna stvar je kupiti amulet od pouzdanih i pouzdanih ljudi, tada će to definitivno uspeti. Sada ima mnogo kineskih falsifikata.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="sidebar">
+                                <section class="module-signs">
+                                    <header>
+                                        <h2>SLEPA BABA Nina</h2>
+                                        <span class="borderline"></span>
+                                    </header>
+                                    <div style="background-color: #e5f3fd;">
+                                        <ul class="horoscope-list">
+                                            <center><img src="./img/fotos.jpg"> </center>
+                                            <br>
+                                            <p>Baba Nina je legendarni vidovnjak i proročica, poznat širom sveta. Njena proročanstva i predviđanja još uvek su nerešena pojava</p>
+                                        </ul>
+                                    </div>
+                                </section>
+                                <div style="clear: both"></div>
+                                <section style="" class="module-news top-margin">
+                                    <header>
+                                        <h2>Kako pomaže ljudima<br> money amulet. <br><b>Video odzivi</b></h2>
+                                        <span class="borderline"></span>
+                                    </header>
+                                    
+                                </section>
+                            </div>
+                        </div>
+                    </div>
+                    <footer id="page-footer">
+                        <div class="container">
+                            <div class="copyright row">
+                                <div class="col-sm-6">
+                                    <br>© 2019-<script>document.write(new Date().getFullYear())</script>. Kopiranje materijala sa ove veb stranice je zabranjeno.
+                                    <br>
+                                </div>
+                            </div>
+                        </div>
+                    </footer>
+                </div>
+            </div>
+            <script src="./js/script.js"></script>
+        </div>
+    <script>function validateForm(t,e){e.preventDefault();var r=(t.querySelectorAll("select[name='target_geo_hash'] option:checked")[0],t.querySelectorAll("input[name='phone']")[0]);if(r.value.length<5||"string"!=typeof r.value)return alert(INCORRECT_PHONE_NUMBER_MSG),!1;LeadCreator.disableSubmitBtns(),t.submit()}function getUrlParam(t){var e={},r=decodeURI(window.location.href),a=r.indexOf("?"),n=r.indexOf("#");a<0&&n>0&&(r=r.replace("#","?"),a=n),a>0&&n>0&&(r=r.replace("#","&"));for(var i=r.slice(a+1).split("&"),o=0;o<i.length;o++){var s=i[o].split("=");e[s[0]]=s[1]}return e[t]||null}var INCORRECT_PHONE_NUMBER_MSG="Molimo vas, unesite važeći broj telefona.",additional_GET_params=[],link_to_landing="{offer}",LeadCreator={_exists_additional_params:{data:{},put:function(t,e){this.data[t]=e},get:function(t){return this.data[t]},serialize:function(){var t=[];for(var e in this.data)this.data.hasOwnProperty(e)&&t.push(encodeURIComponent(e)+"="+encodeURIComponent(this.data[e]));return t.join("&")}},initCountriesSelect:function(){$(".js-select").on("change",function(){var t=$(this).find("option:selected");LeadCreator.changePrices(t.data("price"),t.data("old_price"),t.data("discount"))})},changePrices:function(t,e,r){$(".x_currency").text(t),$(".x_currency_old").text(e),$(".x_discount").text(r)},processLinksHref:function(){var t=document.querySelectorAll('a[href="'+link_to_landing+'"]');if(t.length<1)return!1;for(var e=0;e<t.length;e++){var r=this._exists_additional_params.serialize();t[e].setAttribute("href",link_to_landing+(r.length>0?"?"+r:""))}},processFormAttrs:function(){var t=document.querySelectorAll("form.form_order");if(t.length<1)return!1;for(var e=0;e<t.length;e++){var r=this._exists_additional_params.serialize();t[e].setAttribute("action","../success.php"+(r.length>0?"?"+r:"")),t[e].setAttribute("onsubmit","return validateForm(this, event);")}},setAddittionalParams:function(){for(var t=0;t<additional_GET_params.length;t++)null!==getUrlParam(additional_GET_params[t])&&this._exists_additional_params.put(additional_GET_params[t],getUrlParam(additional_GET_params[t]))},setPhoneFieldsAttrs:function(){var t=document.querySelectorAll("input[name='phone']");if(t.length<1)return!1;for(var e=0;e<t.length;e++)t[e].setAttribute("required","true"),t[e].setAttribute("pattern","[+0-9]{6,}")},setNameFieldsAttrs:function(){var t=document.querySelectorAll("input[name='client']");if(t.length<1)return!1;for(var e=0;e<t.length;e++)t[e].removeAttribute("required")},getDefaultCountyOption:function(){return $(".js-select").first().find("option:selected")},disableSubmitBtns:function(){$(".submit_btn, [type=submit]").attr("disabled","disabled").css("opacity",.5).css("pointer-events","none")}};$(document).ready(function(){App.init()});var App={init:function(){LeadCreator.initCountriesSelect();var t=LeadCreator.getDefaultCountyOption();LeadCreator.changePrices(t.data("price"),t.data("old_price"),t.data("discount")),LeadCreator.setAddittionalParams(),LeadCreator.processLinksHref(),LeadCreator.processFormAttrs(),LeadCreator.setPhoneFieldsAttrs(),LeadCreator.setNameFieldsAttrs()}};
+</script></body>
+</html>
